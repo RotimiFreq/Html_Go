@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="/static/CSS/logincss.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="Index.html">ABOUT-ME</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                        <li><a href="Register.html">REGISTER</a></li>
+                        <li><a href="Calculator.html">CALCULATOR</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <form method="POST" action="/login">
+                <div class="form-field">
+                    <input type="text" id="username" name="username" placeholder="Username" value="" required/>
+                </div>
+
+                <div class="form-field">
+                    <input type="password" id="password" name="password" placeholder="Password" value="" required/> </div>
+
+                <div class="form-field">
+                    <button class="button" type="submit">Log in</button>
+                </div>
+            </form>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

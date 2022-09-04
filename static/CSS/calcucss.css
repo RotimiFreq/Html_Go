@@ -1,0 +1,113 @@
+                                                                * {
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                }
+                                                                
+                                                                body {
+                                                                    font-family: 'Montserrat', sans-serif;
+                                                                    height: 100vh;
+                                                                    background: #ff9966;
+                                                                    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+                                                                    background: linear-gradient(to right, #ff5e62, #ff9966);
+                                                                    text-align: center;
+                                                                }
+                                                                
+                                                                header {
+                                                                    background-color: darkslateblue;
+                                                                    height: 80px;
+                                                                }
+                                                                
+                                                                nav {
+                                                                    display: flex;
+                                                                    padding: 4% 0% 0% 30%;
+                                                                    justify-content: space-between;
+                                                                    align-items: center;
+                                                                }
+                                                                
+                                                                .nav-links {
+                                                                    flex: 1;
+                                                                }
+                                                                
+                                                                .nav-links ul li {
+                                                                    list-style: none;
+                                                                    display: inline-block;
+                                                                    padding: 10px 0px 0px 10px;
+                                                                    position: relative;
+                                                                }
+                                                                
+                                                                .nav-links ul li::after {
+                                                                    content: '';
+                                                                    width: 0%;
+                                                                    height: 3px;
+                                                                    background: coral;
+                                                                    display: block;
+                                                                    margin: 3px;
+                                                                    transition: 0.4s;
+                                                                }
+                                                                
+                                                                .nav-links ul li:hover::after {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .nav-links ul li a {
+                                                                    color: sandybrown;
+                                                                    text-decoration: none;
+                                                                    font-size: 13px;
+                                                                    font-weight: 600;
+                                                                }
+                                                                
+                                                                .calculator {
+                                                                    display: inline-block;
+                                                                    position: absolute;
+                                                                    top: 65%;
+                                                                    left: 50%;
+                                                                    transform: translate(-50%, -50%);
+                                                                }
+                                                                
+                                                                input,
+                                                                button {
+                                                                    border: none;
+                                                                    outline: none;
+                                                                    height: 50px;
+                                                                }
+                                                                
+                                                                input {
+                                                                    width: 321px;
+                                                                    font-size: 30px;
+                                                                    margin-bottom: -1px;
+                                                                    background-color: #333A4D;
+                                                                    color: #EEEEEE;
+                                                                }
+                                                                
+                                                                button {
+                                                                    margin: -1px;
+                                                                    font-family: 'Montserrat', sans-serif;
+                                                                    font-weight: 600;
+                                                                    font-size: 2rem;
+                                                                    background-color: #EEEEEE;
+                                                                    width: 80px;
+                                                                    color: #333A4D;
+                                                                }
+                                                                
+                                                                button:active {
+                                                                    background-color: #333A4D;
+                                                                    color: #EEEEEE;
+                                                                }
+                                                                
+                                                                footer {
+                                                                    background-color: tan;
+                                                                    padding: 5px 0 0 0;
+                                                                    margin-top: 120%;
+                                                                    margin-left: 0px;
+                                                                    margin-right: 0px;
+                                                                    text-align: center;
+                                                                }
+                                                                
+                                                                .footer p {
+                                                                    font-size: 13px;
+                                                                    font-style: italic;
+                                                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                                                    line-height: 1.8em;
+                                                                    font-weight: 650;
+                                                                    color: seashell;
+                                                                }

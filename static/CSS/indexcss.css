@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(252, 240, 222);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.6em;
+}
+
+.container {
+    max-height: 460px;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 1% 0% 0% 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+    position: relative;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a {
+    color: coral;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.logo img {
+    padding: 5% 0 0 5%;
+    width: 55px;
+}
+
+.picture img {
+    padding: 5px 0px 0px 105px;
+    width: 140px;
+}
+
+.header-title {
+    width: 90%;
+    color: coral;
+    position: absolute;
+    top: 175px;
+    left: 280px;
+}
+
+.header-title h1 {
+    font-size: 35px;
+    text-decoration: underline;
+    letter-spacing: 0.04em;
+}
+
+.main-text {
+    position: absolute;
+    top: 340px;
+    left: 130px;
+}
+
+.main-text li {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8em;
+    font-weight: 650;
+    color: teal;
+}
+
+.footer {
+    background-color: purple;
+    padding: 13px;
+    margin-top: 587px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
+    font-weight: 650;
+    color: seashell;
+}

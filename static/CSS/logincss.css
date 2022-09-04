@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+    font-family: 'Lato', sans-serif;
+    color: #4A4A4A;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Images/loginbk.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: blur(200%)
+}
+
+.container {
+    max-height: 700px;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    background-color: teal;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    padding: 1% 0% 0% 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+    position: relative;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: whitesmoke;
+    display: block;
+    margin: 3px;
+    transition: 0.4s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a {
+    color: sandybrown;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+form {
+    width: 500px;
+    position: relative;
+    padding: 110px 120px;
+}
+
+form .form-field::before {
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    color: #888888;
+    content: " ";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form .form-field:nth-child(1)::before {
+    background-image: url(./Images/loginicon1.png);
+    width: 20px;
+    height: 20px;
+    top: 11px;
+}
+
+form .form-field:nth-child(2)::before {
+    background-image: url(./Images/loginicon2.png);
+    width: 16px;
+    height: 16px;
+    top: 11px;
+}
+
+form .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+form input {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #4A4A4A;
+    text-indent: 40px;
+}
+
+form .button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1.1rem 2.5rem;
+    text-align: center;
+    background-color: #47AB11;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+}
+
+.button:hover {
+    background-color: coral;
+}
